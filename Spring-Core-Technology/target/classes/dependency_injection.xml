@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:jee="http://www.springframework.org/schema/jee" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd"> 
+        <!-- bean definitions here -->
+        
+        <bean id="booking" class="com.jsp.spring_core_technologies.setter_injection.Booking">
+        <property name="orderId" value="1234"></property>
+        <property name="productName" value="Samsung-Mobile"></property>
+        <property name="customerName" value="Saurabh"></property>
+        <property name="productQuantity" value="2"></property>
+        </bean>
+        
+        <bean id="laptop" class="com.jsp.spring_core_technologies.constructor_injection.Laptop">
+           <constructor-arg name="laptopId"  value="7654"></constructor-arg>
+           <constructor-arg name="laptopName"  value="ASUS"></constructor-arg>
+           <constructor-arg name="laptopColor"  value="Silver"></constructor-arg>
+           <constructor-arg name="laptopPrice"  value="49999"></constructor-arg>
+           
+           
+        </bean>
+</beans>       
